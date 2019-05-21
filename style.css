@@ -2,7 +2,6 @@
 Author: Grant Imbo
 Url: grantimbo.com
 Version 1.0
-Serial - 1325-1676-6539-2437-2394-0769
 */
 
 * {	margin: 0;	padding: 0;	
@@ -285,6 +284,7 @@ nav ul li a:hover {
 	border: white solid 4px;
 	box-shadow: 1px 1px 0px #808080;
 	margin: 1.85185185185%;
+	min-height: 200px;
 }
 
 /*contact*/
