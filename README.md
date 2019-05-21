@@ -1,10 +1,10 @@
 # Creative Nurbs - (Preview Only)
-I was assigned to convert the PSD mockup to a working website. I used WordPress as backend for this project. This is just the static preview.
+I was assigned to convert the PSD mockup to a working site. This repository is just the static preview. I used WordPress as the backend for this project.
 
 Preview on Github pages
-http://grantimbo.github.com/creativenurbs
+http://grantimbo.github.io/creativenurbs
 
 Preview on Codepen
-https://codepen.io/grantimbo/creativenurbs
+https://codepen.io/grantimbo/full/mYqMaQ
 
 Website created in 2013
