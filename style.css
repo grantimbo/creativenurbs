@@ -1,0 +1,473 @@
+/*
+Author: Grant Imbo
+Url: grantimbo.com
+Version 1.0
+Serial - 1325-1676-6539-2437-2394-0769
+*/
+
+* {	margin: 0;	padding: 0;	
+	box-sizing: border-box;
+	-moz-box-sizing:border-box; 
+	-webkit-box-sizing: border-box; 
+	-o-box-sizing: border-box;
+}
+body { font: normal 14px "Myriad Pro", sans-serif}
+article, aside, figure, footer, header, hgroup, menu, nav, section {display: block;} 
+img { width: 100%; height: auto;}
+ul { list-style: none}
+h1 { font-size: 20px; font-weight: bold}
+h2 { font-size: 18px; font-weight: bold}
+p {	font-size: 14px;}
+.clear { clear: both}
+
+@media screen and (max-width: 320px) {
+
+nav {
+	display: none;  
+	opacity: 0;
+}
+}
+
+/*navigation*/
+nav {
+	display: table;  
+	margin: 0 auto;
+}
+nav ul {
+	padding: 90px 0px 0px;
+}
+nav ul li {
+	float: left;
+	display: inline;
+}
+nav ul li a {
+	float: left;
+	color: #EEEEEE;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 10px 25px;
+	font-size: 24px;
+	font-weight: bolder;
+	text-shadow: 1px 1px 0px #000000;
+	-webkit-transition: color 0.2s linear;
+	-moz-transition: color 0.2s linear;
+	-ms-transition: color 0.2s linear;
+	-o-transition: color 0.2s linear;
+	transition: color 0.2s linear;
+}
+nav ul li a:hover {
+	color: #c1e519;
+	-webkit-transition: color 0.2s linear;
+	-moz-transition: color 0.2s linear;
+	-ms-transition: color 0.2s linear;
+	-o-transition: color 0.2s linear;
+	transition: color 0.2s linear;
+}
+
+.logo {
+	background: url(imgs/logo.png) no-repeat;
+	background-size: 100%;
+	width: 229px;
+	height: 229px;
+	margin: -50px -10px 0px 0px;
+}
+/*header*/
+#header {
+	background-color: #191D18;
+	background-size: 100%;
+	width: 100%;
+	display: inline-block;
+	position: relative;
+	z-index: 3;
+}
+
+/*parallax*/
+#creative_slant {
+	position: relative;
+	margin: -900px 0 -90px;
+	background: #191D18;
+	width: 100%;
+	height: 1000px;
+	z-index: 2;
+	background-size: 100%;
+	-moz-transform: skewY(-4deg);
+	-webkit-transform: skewY(-4deg);
+	-o-transform: skewY(-5deg);
+	-ms-transform: skewY(-5deg);
+}
+
+/*real parallax*/
+.parallax-container {
+	text-align: center;
+	overflow: hidden;
+	margin-top: 62px;
+	position: relative;
+}
+#parallax div {
+	width: 100%;
+	text-align: center;
+}
+#parallax img {
+	width: 100%;
+	min-width: 1000px;
+	max-width: 1577px;
+	display: inline-block;
+	margin: 0 -20%;
+}
+.layers {opacity: 0}
+.layers.active {opacity: 1;	transition: opacity 1s ease-in-out 1.5s}
+
+
+.wrapper {
+	width: 100%;
+	margin: 0 auto;
+}
+
+/*tagline*/
+.tagline {
+	clear: both;
+	text-align: center;
+	margin-bottom: 110px;
+}
+.tagline h1{
+	font-size: 60px;
+	text-transform: uppercase;
+	color: #8aa50d;
+	margin-bottom: 10px;
+}
+.tagline p {
+	font-size: 18px;
+	color: #555555;
+	width: 80%;
+	margin: 20px auto;
+	max-width: 960px;
+}
+.tagline a {
+	font-size: 30px;
+	font-weight: bold;
+	color: #AECA2C;
+	text-decoration: none;
+	border-bottom: 2px solid #BFDF2C;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+.tagline a:hover {
+	color: #8aa50d;
+	border-bottom: 2px solid #8aa50d;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+/*expertise*/
+.expertise {
+	background: #c0e419;
+	z-index: 40;
+	position: relative;
+	max-width: 1080px;
+	margin: -757px auto 10px;
+	padding: 0px 20px 640px;
+}
+#expertise_image {
+	background: url(imgs/expertise.png) 0px 0px no-repeat;
+	margin: 0px auto;
+	max-width: 1080px;
+	height: 233px;
+	background-size: 100%;
+}
+#expertise_slant {
+	margin: 0px auto -81px;
+	background-color: #c0e419;
+	width: 100%;
+	height: 1000px;
+	z-index: 30;
+	background-size: 100%;
+	-webkit-transform: skewY(5deg);
+	-moz-transform: skewY(5deg);
+	-o-transform: skewY(-5deg);
+	-ms-transform: skewY(-5deg);
+}
+.expertise li {
+	float: left;
+	width: 30.3%;
+	margin: 0 1.48148148148%;
+}
+#graphic_design, #web_design, #animation {
+	text-align: center;
+	min-height: 375px;
+	width: 100%;
+	box-shadow: 1px 1px 0px #B3B3B3;
+	background: url(imgs/pw_maze_white.png);
+	border-radius: 12px;
+	-webkit-transform: skewY(-5deg);
+	-moz-transform: skewY(-5deg);
+	-o-transform: skewY(-5deg);
+	-ms-transform: skewY(-5deg);
+}
+.expertise img { margin-bottom: 50px;}
+.expertise h1 {
+	color: white;
+	background: #303030;
+	padding: 10px 0px;
+	font-size: 30px;
+	text-shadow: -1px -1px 0px rgba(92, 92, 92, 1);
+	box-shadow: 0px 1px 0px #303030;
+	border-top-right-radius: 12px;
+	border-top-left-radius: 12px;
+	margin-top: -18px;
+	margin-bottom: 6px;
+	position: relative;
+	top: -20px;
+	-webkit-transform: skewY(5deg);
+	-moz-transform: skewY(5deg);
+	-o-transform: skewY(-5deg);
+	-ms-transform: skewY(-5deg);
+}
+.expertise ul li ul {
+	padding: 20px 0px;
+}
+.expertise ul li ul li{
+	width: 100%;
+	float: none;
+	color: #94AD0C;
+	padding: 3px 0px;
+	font-size: 28px;
+	text-shadow: 1px 1px 0px #fff;
+	transition: color .2s;
+	-moz-transition: color .2s; 
+	-webkit-transition: color .2s; 
+}
+.expertise ul li:hover {
+	cursor: default;
+	color: #62664D;
+	text-shadow: -1px -1px 0px #ccc;
+}
+
+/*portfolio*/
+#portfolio_image {
+	background: url(imgs/portfolio.png) 0px 0px no-repeat;
+	margin: 0px auto;
+	max-width: 1080px;
+	height: 256px;
+	background-size: 100%;
+}
+#portfolio_slant {
+	padding-top: 40px;
+	position: relative;
+	margin: -540px auto -75px;
+	background-color: #a0c00f;
+	width: 100%;
+	height: 1000px;
+	z-index: 50;
+	background-size: 100%;
+	-webkit-transform: skewY(-5deg);
+	-moz-transform: skewY(-5deg);
+	-o-transform: skewY(-5deg);
+	-ms-transform: skewY(-5deg);
+}
+.portfolio {
+	max-width: 1080px;
+	margin: -680px auto 0px;
+	z-index: 70;
+	position: relative;
+	padding: 0 20px 1000px;
+}
+.portfolio ul li {
+	display: inline;
+	overflow: hidden;
+	width: 29.6%;
+	float: left;
+	background: #252525;
+	border: white solid 4px;
+	box-shadow: 1px 1px 0px #808080;
+	margin: 1.85185185185%;
+}
+
+/*contact*/
+.tell_us {
+	width: 450px;
+	height: 230px;
+	background: url(imgs/bg_images.png) -72px 0px no-repeat;
+	position: absolute;
+	top: -120px;
+	right: 80px;
+}
+#connect_image {
+	background: url(imgs/connect.png) 0px 0px no-repeat;
+	margin: 0px auto;
+	max-width: 1080px;
+	height: 263px;
+	background-size: 100%;
+
+}
+#contact_slant {
+	padding-top: 30px;
+	position: relative;
+	margin: -890px auto -81px;
+	background-color: #bedc1a;
+	width: 100%;
+	height: 1280px;
+	z-index: 100;
+	-webkit-transform: skewY(5deg);
+	-moz-transform: skewY(5deg);
+	-o-transform: skewY(-5deg);
+	-ms-transform: skewY(-5deg);
+}
+.contact {
+	max-width: 1080px;
+	margin: -1039px auto 0px;
+	z-index: 1300;
+	position: relative;
+	padding: 160px 70px 200px
+}
+.contact_details {
+	position: relative;
+	width: 100%;
+	margin-bottom: 50px;
+	position: relative;
+}
+.contact_details header {
+	margin: 0px 0px 0px -30px;
+
+}
+.contact span {
+	background: #8aa50d;
+	font-size: 32px;
+	text-align: center;
+	border-radius: 2px;
+	min-width: 40px;
+	color: #fff;
+	font-weight: bold;
+	padding: 0px 9px;
+	float: left;
+	box-shadow: 1px 1px 0px #657961;
+}
+.contact_details header h1 {
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 25px;
+	text-shadow: -1px -1px 0px #ADADAD;
+	margin: 4px 0px 30px 13px;
+	float: left;
+}
+input, textarea {
+	padding: 13px 20px;
+	max-width: 500px;
+	width: 100%;
+	border: 1px solid #d9d9d9;
+	border-radius: 4px;
+	box-shadow: inset 1px 2px 6px #ddd, 0 1px #fff;
+	background: #f7f7f7;
+	font-size: 18px;
+	font-size: 1.125rem;
+	font-family: 'proxima-nova', sans-serif;
+	color: #7C7D7D;
+	margin: 0 0 15px 0;
+	outline: 0;
+}
+/*footer*/
+.footer_slant {
+	position: relative;
+	margin: -94px 0 -94px;
+	background: #141414;
+	width: 100%;
+	height: 200px;
+	z-index: 4000;
+	-webkit-transform: skewY(-5deg);
+	-moz-transform: skewY(-5deg);
+	-o-transform: skewY(-5deg);
+	-ms-transform: skewY(-5deg);s
+}
+#social_network, #hello, #Announcements {
+	
+}
+.footer {
+	background: #141414;
+	color: white;
+	max-width: 1080px;
+	margin: 0px auto;
+	padding: 0 50px;
+	font: myriad_pro;
+}
+.footer h1 {
+	color: white;
+	padding: 10px 0px;
+	font-size: 36px;
+	text-align: left;
+	padding-left: 11px;
+	position: relative;
+}
+.footer ul {
+	padding: 20px 0px;
+	float: left;
+	width: 32%;
+	text-align: center;
+	/*margin: 5px 0px 30px;*/
+	margin: 0.46296296296% 0px 2.77777777778%;
+}
+.footer a {
+	padding: 14px 0px;
+	font-size: 24px;
+	text-align: left;
+	display: block;
+	margin: 10px 0px;
+	text-decoration: none;
+	color:#B1B1B1;
+}
+.footer a:hover {
+	color: #fff;
+	cursor: pointer;
+	-webkit-transition: color 0.3s linear;
+	-moz-transition: color 0.3s linear;
+	-ms-transition: color 0.3s linear;
+	-o-transition: color 0.3s linear;
+	transition: color 0.3s linear;
+}
+.footer ul li a p {
+	margin: -7px 0px 0px 59px;
+	font-size: 24px;
+	position: relative;
+	-webkit-transition: color 0.3s linear;
+	-moz-transition: color 0.3s linear;
+	-ms-transition: color 0.3s linear;
+	-o-transition: color 0.3s linear;
+	transition: color 0.3s linear;
+}
+
+/*icons*/
+.icons {
+	width: 45px;
+	height: 45px;
+	box-shadow: 1px 1px 0px #525252;
+	border-radius: 50px;
+	-webkit-transition: color 0.3s linear;
+	-moz-transition: color 0.3s linear;
+	-ms-transition: color 0.3s linear;
+	-o-transition: color 0.3s linear;
+	transition: color 0.3s linear;
+}
+.icons.facebook {background: #424241 url(imgs/social_icons.png) -178px -41px; -webkit-transition: all 0.3s linear;-moz-transition: all 0.3s linear; -ms-transition: all 0.3s linear;	-o-transition: all 0.3s linear;	transition: all 0.3s linear;}
+.icons.twitter { background: #424241 url(imgs/social_icons.png) -1px 3px; -webkit-transition: all 0.3s linear;-moz-transition: all 0.3s linear; -ms-transition: all 0.3s linear;	-o-transition: all 0.3s linear;	transition: all 0.3s linear;}
+.icons.behance { background: #424241 url(imgs/social_icons.png) -132px -43px; -webkit-transition: all 0.3s linear;-moz-transition: all 0.3s linear; -ms-transition: all 0.3s linear;	-o-transition: all 0.3s linear;	transition: all 0.3s linear;}
+.icons.youtube { background: #424241 url(imgs/social_icons.png) -45px 1px; -webkit-transition: all 0.3s linear;-moz-transition: all 0.3s linear; -ms-transition: all 0.3s linear;	-o-transition: all 0.3s linear;	transition: all 0.3s linear;}
+.icons.skype { background: #424241 url(imgs/social_icons.png) -90px 3px; -webkit-transition: all 0.3s linear;-moz-transition: all 0.3s linear; -ms-transition: all 0.3s linear;	-o-transition: all 0.3s linear;	transition: all 0.3s linear;}
+.icons.linkedin { background: #424241 url(imgs/social_icons.png) -133px 1px; -webkit-transition: all 0.3s linear;-moz-transition: all 0.3s linear; -ms-transition: all 0.3s linear;	-o-transition: all 0.3s linear;	transition: all 0.3s linear;}
+.icons.google {background: #424241 url(imgs/social_icons.png) -178px 4px; -webkit-transition: all 0.3s linear;-moz-transition: all 0.3s linear; -ms-transition: all 0.3s linear;	-o-transition: all 0.3s linear;	transition: all 0.3s linear;}
+.icons.contactng { background: #424241 url(imgs/social_icons.png) -264px -43px; -webkit-transition: all 0.3s linear;-moz-transition: all 0.3s linear; -ms-transition: all 0.3s linear;	-o-transition: all 0.3s linear;	transition: all 0.3s linear;}
+.icons.message { background: #424241 url(imgs/social_icons.png) 1px -43px; -webkit-transition: all 0.3s linear;-moz-transition: all 0.3s linear; -ms-transition: all 0.3s linear;	-o-transition: all 0.3s linear;	transition: all 0.3s linear;}
+.icons.address { background: #424241 url(imgs/social_icons.png) -307px -42px; -webkit-transition: all 0.3s linear;-moz-transition: all 0.3s linear; -ms-transition: all 0.3s linear;	-o-transition: all 0.3s linear;	transition: all 0.3s linear;}
+
+.icons.facebook:hover {background-color: #45619d; -webkit-transition: all 0.3s linear;	-moz-transition: all 0.3s linear;-ms-transition: all 0.3s linear;	-o-transition: all 0.3s linear;	transition: all 0.3s linear;}
+.icons.twitter:hover {background-color: #3fa0ed;  -webkit-transition: all 0.3s linear;	-moz-transition: all 0.3s linear;-ms-transition: all 0.3s linear;	-o-transition: all 0.3s linear;	transition: all 0.3s linear;}
+.icons.behance:hover {background-color: #0273f9;  -webkit-transition: all 0.3s linear;	-moz-transition: all 0.3s linear;-ms-transition: all 0.3s linear;	-o-transition: all 0.3s linear;	transition: all 0.3s linear;}
+.icons.youtube:hover {background-color: #bb0000;  -webkit-transition: all 0.3s linear;	-moz-transition: all 0.3s linear;-ms-transition: all 0.3s linear;	-o-transition: all 0.3s linear;	transition: all 0.3s linear;}
+.icons.skype:hover {background-color: #029fd2;  -webkit-transition: all 0.3s linear;	-moz-transition: all 0.3s linear;-ms-transition: all 0.3s linear;	-o-transition: all 0.3s linear;	transition: all 0.3s linear;}
+.icons.linkedin:hover {background-color: #007bb6;  -webkit-transition: all 0.3s linear;	-moz-transition: all 0.3s linear;-ms-transition: all 0.3s linear;	-o-transition: all 0.3s linear;	transition: all 0.3s linear;}
+.icons.google:hover {background-color: #dd4b39;  -webkit-transition: all 0.3s linear;	-moz-transition: all 0.3s linear;-ms-transition: all 0.3s linear;	-o-transition: all 0.3s linear;	transition: all 0.3s linear;}
+.icons.contactng:hover {background-color: #8DA509;  -webkit-transition: all 0.3s linear;	-moz-transition: all 0.3s linear;-ms-transition: all 0.3s linear;	-o-transition: all 0.3s linear;	transition: all 0.3s linear;}
+.icons.message:hover {background-color: #45619d;  -webkit-transition: all 0.3s linear;	-moz-transition: all 0.3s linear;-ms-transition: all 0.3s linear;	-o-transition: all 0.3s linear;	transition: all 0.3s linear;}
+.icons.address:hover {background-color: #45619d;  -webkit-transition: all 0.3s linear;	-moz-transition: all 0.3s linear;-ms-transition: all 0.3s linear;	-o-transition: all 0.3s linear;	transition: all 0.3s linear;}
