@@ -1,5 +1,5 @@
 # Creative Nurbs - (Preview Only)
-My task was to covert the PSD mockups to a working website. I used WordPress for the backend.
+I was assigned to convert the PSD mockup to a working website. I used WordPress as backend for this project. This is just the static preview.
 
 Preview on Github pages
 http://grantimbo.github.com/creativenurbs
